@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logical-t-non-circuit-library"
+version = "0.1.0"
+description = "Shared non-circuit-level 3D color-code and logical-T simulation methods"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "stim",
+    "numpy",
+    "matplotlib",
+    "stimbposd",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["non_circuit_library*"]

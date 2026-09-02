@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logical-t-circuit-library"
+version = "0.1.0"
+description = "Shared circuit builders for circuit-level 3D color-code and logical-T simulations"
+requires-python = ">=3.10"
+dependencies = [
+    "stim",
+    "numpy",
+    "matplotlib",
+    "stimbposd",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["circuit_library*"]
